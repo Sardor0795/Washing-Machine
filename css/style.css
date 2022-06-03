@@ -25,9 +25,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  background-color: #de8a89;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -62,7 +62,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -86,6 +86,126 @@ button {
 
 .main-content {
   flex-grow: 1;
+}
+
+/* WASHING TYPES */
+
+.washing-display-wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.washing-types {
+  margin-bottom: 20px;
+}
+
+.washing-type {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.washing-type:not(:first-child) {
+  opacity: 0.7;
+}
+
+.washing-type:hover {
+  opacity: 0.5;
+}
+
+.washing-text {
+  max-width: 650px;
+  opacity: 0.7;
+  margin-bottom: 60px;
+}
+
+/* DISPLAY BOX */
+
+.display-box {
+  display: flex;
+}
+
+.display-block {
+  width: calc(100% / 3);
+  background-color: #3e3c3d;
+  padding: 90px 60px;
+  position: relative;
+}
+
+.display-block:nth-child(2) {
+  background-color: #353334;
+}
+
+.display-block:nth-child(3) {
+  background-color: #201e1f;
+}
+
+.display-type {
+  color: #ca7668;
+}
+
+.display-info {
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.left-box {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-color: #ecb9b8;
+  background-image: url("../img/left-arrow-solid-24.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left-box:hover,
+.right-box:hover {
+  opacity: 0.8;
+}
+
+.right-box {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-color: #ecb9b8;
+  background-image: url("../img/right-arrow-solid-24.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button {
+  position: absolute;
+  background-color: #131313;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 0px;
+  width: 150px;
+  border-radius: 5px;
+  bottom: -15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  bottom: -10px;
 }
 
 /* RETINA BG */
