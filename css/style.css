@@ -97,14 +97,17 @@ button {
 
 .washing-types {
   margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .washing-type {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
-  margin-right: 30px;
+  margin-right: 50px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
